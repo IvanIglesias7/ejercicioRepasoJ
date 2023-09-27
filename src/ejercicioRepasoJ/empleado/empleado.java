@@ -1,5 +1,8 @@
 package ejercicioRepasoJ.empleado;
 
+/**
+ * Entidad empleado
+ */
 public class empleado {
 
 	String nombre;
@@ -9,6 +12,7 @@ public class empleado {
 	String titulacionA;
 	int nSeguridad;
 	int nCuenta;
+	int nEmpleado;
 
 	public empleado(String nombre, String apellidos, String dni, String fechaNac, String titulacionA, int nSeguridad,
 			int nCuenta) {
@@ -20,6 +24,14 @@ public class empleado {
 		this.titulacionA = titulacionA;
 		this.nSeguridad = nSeguridad;
 		this.nCuenta = nCuenta;
+	}
+
+	public int getnEmpleado() {
+		return nEmpleado;
+	}
+
+	public void setnEmpleado(int nEmpleado) {
+		this.nEmpleado = nEmpleado;
 	}
 
 	public empleado() {
@@ -85,7 +97,15 @@ public class empleado {
 	@Override
 	public String toString() {
 		return "empleado [nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + ", fechaNac=" + fechaNac
-				+ ", titulacionA=" + titulacionA + ", nSeguridad=" + nSeguridad + ", nCuenta=" + nCuenta + "]";
+				+ ", titulacionA=" + titulacionA + ", nSeguridad=" + nSeguridad + ", nCuenta=" + nCuenta + ", id=" + nEmpleado
+				+ "]";
 	}
+	
+	public String toStringFichero() {
+		return "empleado [nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + ", fechaNac=" + fechaNac
+				+ ", titulacionA=" + titulacionA;
+	}
+
+	
 
 }

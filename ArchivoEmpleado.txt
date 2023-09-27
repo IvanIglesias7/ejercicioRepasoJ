@@ -1,0 +1,1 @@
+empleado [nombre=b, apellidos=b, dni=b, fechaNac=b, titulacionA=b

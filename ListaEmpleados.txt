@@ -1,0 +1,2 @@
+empleado [nombre=a, apellidos=a, dni=a, fechaNac=a, titulacionA=a
+empleado [nombre=b, apellidos=b, dni=b, fechaNac=b, titulacionA=b
